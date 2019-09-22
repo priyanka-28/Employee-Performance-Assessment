@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.btn{
+    display: block;
+    width: 300px;
+    
+    margin: 0 auto;
+    margin-top: 50px;
+}
+h2{
+    text-align: center;
+    color:#283593;
+    padding-bottom: 20px;
+}
+i{
+    margin-top: 20px;
+    margin-left: 135px;
+    margin-bottom: 20px;
+    color: #283593;
+}
+#main{
+    width: 320px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.text-field{
+    width:150px;
+}
+.row{
+    margin-top: 20px;
+}
