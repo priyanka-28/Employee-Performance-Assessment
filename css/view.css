@@ -6,3 +6,23 @@ i{
     margin-left: 20px;
 /*    padding-right: 10px;*/
 }
+.dropdown-content{
+   width: max-content !important;
+   height:auto !important;
+}
+.delete-item{
+/*    margin-right: 30px;*/
+}
+i{
+    margin-right: 20px;
+}
+.secondary-content{
+    float:left;
+    
+}
+.add{
+    color: green;
+}
+.delete{
+    color: red;
+}

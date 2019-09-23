@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Plugins/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="Plugins/materialize/css/materialize.css">
-    <link rel="stylesheet" href="css/view.css">
+<!--    <link rel="stylesheet" href="css/view.css">-->
 </head>
 
 <body>
@@ -36,14 +36,33 @@
                                 <input type="text" name="Filter" id="filter">
                                 <label for="filter">Search</label>
                             </div>
+<!--
                             <ul class="collection">
                                 <li class="collection-item"><a href="" class="delete-item secondary-content"><i class="fa fa-eye"></i></a>Priyanka</li>
                                 <li class="collection-item"><a href="" class="delete-item secondary-content"><i class="fa fa-eye"></i></a>Archana</li>
                                 <li class="collection-item"><a href="" class="delete-item secondary-content"><i class="fa fa-eye"></i></a>Ria</li>
                             </ul>
-                            <div class="row">
+-->
+                            <?php
+                                extract($_POST);
+                                include("db.php");
+                                $query="select EName from student.employee";
+                                $result=$cn->query($query);
+                                while ($result->num_rows>0)
+                                {
+                                    if ($row=$result->fetch_assoc())
+                                    {?>
+                                        <ul class="collection">
+                                        <li class="collection-item"><a href="" class="delete-item secondary-content"><i class="fa fa-eye"></i></a> <?php echo($row["EName"])?></li>
+                               
+                            </ul>
+                            <?php
+                                    }
+                                }
+                                ?>
+<!--                            <div class="row">-->
 <!--                                <input type="submit" value="Add Employee" class="btn indigo darken-3">-->
-                            </div>
+<!--                            </div>-->
                             <!--                                <a href="#" class="clear-tasks btn black">Clear Tasks</a>-->
                         </div>
                     </div>

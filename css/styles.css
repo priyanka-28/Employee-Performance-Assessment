@@ -17,7 +17,7 @@ h2{
     padding-bottom: 20px;
 }
 i{
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     margin-left: 135px;
     margin-bottom: 20px;
     color: #283593;
@@ -32,4 +32,7 @@ i{
 }
 .row{
     margin-top: 20px;
+}
+#id .register{
+    margin-top: 0;
 }
